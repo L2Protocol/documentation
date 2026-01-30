@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Artemus';
+    src: url('https://static.l2protocol.com/fonts/Artemus.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --vp-c-accent-bg: #959AFD;
+    --vp-c-accent-text: #0C263A;
+    --vp-c-accent: #292D93;
+    --font-family: 'Open Sans', sans-serif
+}
+
+.vp-site-name {
+    font-family: 'Artemus';
+    line-height: 1.625;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h1#main-title {
+    font-family: 'Artemus';
+    line-height: 1.625;
+    font-size: 3rem;
+}
+
+.vp-hero-action-button {
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    border: 1px solid var(--vp-c-accent-bg);
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.external-link-icon .external-link::after {
+    color: var(--vp-c-accent-bg);
+    background: var(--vp-c-accent-bg);
+}
+
+@media (min-width: 1200px) {
+    .vp-hero-action-button {
+        padding: 1rem 1.875rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .vp-hero-action-button {
+        padding: 1rem 1.75rem;
+    }
+}
+@media (min-width: 576px) {
+    .vp-hero-action-button {
+        padding: 1rem 1.25rem;
+    }
+}
+
+html[data-theme=dark] {
+        --vp-c-bg: #1E2366;
+}

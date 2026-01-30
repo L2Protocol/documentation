@@ -1,7 +1,8 @@
 ---
 home: true
 title: Home
-heroImage: https://vuejs.press/images/hero.png
+heroImage: https://static.l2protocol.com/images/icon.svg
+heroImageDark: https://static.l2protocol.com/images/icon-dark.svg
 actions:
   - text: Get Started
     link: /get-started.html
@@ -25,9 +26,4 @@ features:
   - title: Bundlers
     details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
----
-
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
-
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+footer: Copyright © 2026-present L2Protocol
