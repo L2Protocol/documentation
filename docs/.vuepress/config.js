@@ -16,7 +16,29 @@ export default defineUserConfig({
     logoDark: 'https://static.l2protocol.com/images/icon-dark.svg',
     logoAlt: 'L2 Protocol - Smart Contracts for Any Chain',
     heroImage: 'https://static.l2protocol.com/images/icon.svg',
-    navbar: ['/', '/get-started'],
+    navbar: [ 
+      { text: 'Home', link: '/' },  
+      { text: 'L2 Protocol Chain', link: '/l2-protocol-chain/' }
+    ],
+    sidebar: [
+        {
+          text: 'L2 Protocol',
+          collapsible: true,
+          children: [
+            { text: 'Introduction', link: '/l2-protocol-chain/README.md' },
+            { text: 'Get Started', link: '/l2-protocol-chain/get-started.md' }
+          ]
+        },
+        {
+          text: 'Validators',
+          collapsible: true,
+          children: [
+            { text: 'About', link: '/validators/README.md' },
+            { text: 'Creation Guide', link: '/validators/validator-creation-guide.md' }
+          ]
+        }        
+      ],
+      sidebarDepth: 1
   }),
 
   bundler: viteBundler(),

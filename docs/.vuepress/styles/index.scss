@@ -11,7 +11,19 @@
     --vp-c-accent-bg: #959AFD;
     --vp-c-accent-text: #0C263A;
     --vp-c-accent: #292D93;
-    --font-family: 'Open Sans', sans-serif
+    --font-family: 'Open Sans', sans-serif;
+    --vp-c-accent: #959AFD;
+    --vp-c-border: #F6F9FC;
+    --vp-c-gutter: #959AFD;
+    
+}
+
+.vp-sidebar {
+    scrollbar-color: unset;
+}
+
+.vp-page-nav .auto-link {
+    --vp-c-gutter: #F6F9FC;
 }
 
 .vp-site-name {
@@ -29,12 +41,30 @@ h1#main-title {
 
 .vp-hero-action-button {
     border-radius: 8px;
-    background-color: white;
+    background-color: transparent;
     transition: all 0.3s ease-out;
     border: 1px solid var(--vp-c-accent-bg);
     font-size: 1rem;
     line-height: 1;
     font-weight: 600;
+}
+
+.vp-hero-action-button:hover {
+    border-radius: 8px;
+    background-color: #292D93;
+    transition: all 0.3s ease-out;
+    border: 1px solid #292D93;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+    color: white;
+}
+
+
+.vp-hero-action-button.primary:hover {
+    transform: translateY(-3px);
+    background-color: var(--vp-c-accent-bg);
+    border: 1px solid var(--vp-c-accent-bg);
 }
 
 .external-link-icon .external-link::after {
@@ -60,5 +90,10 @@ h1#main-title {
 }
 
 html[data-theme=dark] {
-        --vp-c-bg: #1E2366;
+    --vp-c-bg: #1E2366;        
+    --vp-c-border: #272C6D;
+
+    .vp-page-nav .auto-link {
+        --vp-c-gutter: #272C6D;
+    }
 }
