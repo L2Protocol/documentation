@@ -8,7 +8,7 @@ If you are new to governance, read the [Governance overview](./README.md) first 
 
 ## 1. Before You Start
 
-You sign in to the dashboard with your wallet, so it is already connected when you open the governance page — no separate connection step is needed. Just make sure:
+You sign in to the dashboard with your wallet, so it is already connected when you open the governance page; no separate connection step is needed. Just make sure:
 
 - your wallet is on the L2 Protocol network, and
 - it holds a small amount of L2P to cover transaction fees for voting, creating, or settling proposals.
@@ -55,8 +55,8 @@ Use this to change a network setting. The interface builds the change safely for
 
 1. Select **Parameter change**.
 2. Enter a **Title** and **Description**.
-3. Choose the **Target contract** — the system contract you want to change. A short description of the selected contract is shown to help you choose.
-4. Choose the **Parameter key** — the specific setting to change. Each key shows a description of what it does and the allowed range.
+3. Choose the **Target contract**, the system contract you want to change. A short description of the selected contract is shown to help you choose.
+4. Choose the **Parameter key**, the specific setting to change. Each key shows a description of what it does and the allowed range.
 5. Enter the **Value**. The interface knows the expected type for each parameter (an address, a whole number, or true/false) and validates your input against the allowed range.
 6. Check the **Resulting call** preview, which shows exactly what will be submitted.
 7. Click **Create Proposal** and confirm the transaction.
@@ -104,8 +104,8 @@ New proposals start as *Pending* during the voting delay and become *Active* onc
 
 ## Resources
 
-- [Governance overview](./README.md) — concepts, proposal lifecycle, and voting power
-- [Governance Interface](https://dashboard.l2protocol.com/governance) — review and act on proposals
+- [Governance overview](./README.md) - concepts, proposal lifecycle, and voting power
+- [Governance Interface](https://dashboard.l2protocol.com/governance) - review and act on proposals
 
 ---
 

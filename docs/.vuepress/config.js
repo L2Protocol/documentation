@@ -27,7 +27,8 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             { text: 'Introduction', link: '/l2-protocol-chain/README.md' },
-            { text: 'Get Started', link: '/l2-protocol-chain/get-started.md' }
+            { text: 'Get Started', link: '/l2-protocol-chain/get-started.md' },
+            { text: 'System Contracts', link: '/l2-protocol-chain/system-contracts.md' }
           ]
         },
         {

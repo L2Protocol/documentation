@@ -113,4 +113,4 @@ Example proof: `0xaf762123d031984f5a7ae5d46b98208ca31293919570f51ae2f0a03069c5e8
 
 Click "Submit" to send the transaction after filling in all fields.
 
-> **Important**: Creating a validator does not guarantee your node will become active. Selection is based on a ranking of the total number of staked tokens. Only the top N nodes are selected as active validators. This number N is determined by the "maxElectedValidators" parameter in the StakeHub contract (`0x0000000000000000000000000000000000002002`).
+> **Important**: Creating a validator does not guarantee your node will become active. Selection is based on a ranking of the total number of staked tokens. Only the top N nodes are selected as active validators. This number N is determined by the "maxElectedValidators" parameter in the StakeHub contract ([`0x0000000000000000000000000000000000002002`](https://l2pscan.com/address/0x0000000000000000000000000000000000002002)).

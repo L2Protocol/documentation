@@ -8,14 +8,14 @@ Governance lets the L2 Protocol community steer the network. Through the governa
 
 L2 Protocol is governed on-chain. Instead of a central party changing network settings, changes are made through **proposals** that token holders vote on. If a proposal is accepted and executed, the change is applied automatically by the smart contracts.
 
-Governance is used to adjust network parameters — for example the voting rules, staking limits, slashing penalties, or block-reward settings — and to signal community sentiment.
+Governance is used to adjust network parameters (for example the voting rules, staking limits, slashing penalties, or block-reward settings) and to signal community sentiment.
 
 ## What You Can Do
 
-- **Review proposals** — see what is being proposed, the current vote split, and each proposal's status.
-- **Vote** — cast a *For*, *Against*, or *Abstain* vote on active proposals using your voting power.
-- **Create proposals** — submit a parameter change or a signal proposal.
-- **Settle proposals** — queue and execute proposals that have been accepted.
+- **Review proposals**: see what is being proposed, the current vote split, and each proposal's status.
+- **Vote**: cast a *For*, *Against*, or *Abstain* vote on active proposals using your voting power.
+- **Create proposals**: submit a parameter change or a signal proposal.
+- **Settle proposals**: queue and execute proposals that have been accepted.
 
 ## Proposal Types
 
@@ -23,7 +23,7 @@ Governance is used to adjust network parameters — for example the voting rules
 A concrete on-chain change to a system contract, such as raising the maximum number of validators. These proposals can be queued and executed once accepted. They are always routed through the **GovHub** contract, which safely forwards the change to the target contract.
 
 **Signal proposal (non-executable)**
-A title and description only, with no on-chain action. Use these to gauge community opinion. A signal proposal can be voted on but cannot be queued or executed — it is non-binding by design.
+A title and description only, with no on-chain action. Use these to gauge community opinion. A signal proposal can be voted on but cannot be queued or executed; it is non-binding by design.
 
 ## Proposal Lifecycle
 
@@ -32,7 +32,7 @@ Every proposal moves through a series of states:
 | State | Meaning |
 | --- | --- |
 | **Pending** | Created, but voting has not started yet (there is a short voting delay). |
-| **Active** | Voting is open — you can cast your vote. |
+| **Active** | Voting is open, so you can cast your vote. |
 | **Defeated** | Voting ended without enough support or quorum. |
 | **Succeeded** | Voting passed. The proposal can now be queued. |
 | **Queued** | Scheduled in the timelock, waiting for the delay to pass. |
@@ -51,7 +51,7 @@ If you have no voting power for a proposal, the interface will tell you, and the
 For a proposal to pass, it needs both:
 
 - **More *For* than *Against* votes**, and
-- **Enough total participation to reach quorum** — a minimum share of the total voting power must take part.
+- **Enough total participation to reach quorum**: a minimum share of the total voting power must take part.
 
 ## The Timelock
 
@@ -61,7 +61,7 @@ Accepted proposals are not executed instantly. They must first be **queued**, af
 
 For safety, the governor only allows execution through a single trusted entry point: the **GovHub** contract. Proposals created as parameter changes in the interface are automatically routed through GovHub, so they can be executed.
 
-Signal proposals — and any proposal that targets a contract directly instead of via GovHub — cannot be queued or executed. The interface reflects this: it only offers the *Queue*/*Execute* actions for proposals that are actually executable, and explains why when they are not.
+Signal proposals (and any proposal that targets a contract directly instead of via GovHub) cannot be queued or executed. The interface reflects this: it only offers the *Queue*/*Execute* actions for proposals that are actually executable, and explains why when they are not.
 
 ## Getting Started
 
@@ -75,7 +75,7 @@ You sign in to the dashboard with your wallet, so it is already connected when y
 
 **Do I need to connect a wallet?**
 
-You already are. You sign in to the dashboard with your wallet, so it is connected as soon as you open the governance page — ready to vote, create, queue, or execute.
+You already are. You sign in to the dashboard with your wallet, so it is connected as soon as you open the governance page, ready to vote, create, queue, or execute.
 
 **Why can't I vote on a proposal?**
 
@@ -95,8 +95,8 @@ An accepted proposal must be **queued** first, then it waits for the timelock de
 
 ## Resources
 
-- [Governance Guide](./governance-guide.md) — step-by-step instructions for voting, creating, and settling proposals
-- [Governance Interface](https://dashboard.l2protocol.com/governance) — review and act on proposals
+- [Governance Guide](./governance-guide.md) - step-by-step instructions for voting, creating, and settling proposals
+- [Governance Interface](https://dashboard.l2protocol.com/governance) - review and act on proposals
 
 ---
 

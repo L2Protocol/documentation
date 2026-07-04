@@ -6,7 +6,7 @@ Validators are the backbone of the L2 Protocol network. They are responsible for
 
 A validator is a network participant that runs specialized node software to validate transactions and create new blocks on the L2 Protocol blockchain. Validators stake L2P tokens as collateral, demonstrating their commitment to honest participation. In return for their service, validators earn rewards from block production and transaction fees.
 
-Think of validators as the bookkeepers of the blockchain—they verify that all transactions follow the rules, package them into blocks, and maintain consensus about the state of the network.
+Think of validators as the bookkeepers of the blockchain: they verify that all transactions follow the rules, package them into blocks, and maintain consensus about the state of the network.
 
 ## How Validators Work
 
@@ -257,7 +257,7 @@ Users who don't operate validators can still participate:
 
 L2 Protocol uses system contracts to manage staking and validation:
 
-**StakeHub Contract** (`0x0000000000000000000000000000000000002002`):
+**StakeHub Contract** ([`0x0000000000000000000000000000000000002002`](https://l2pscan.com/address/0x0000000000000000000000000000000000002002)):
 - Manages validator registration
 - Handles staking and delegation
 - Distributes rewards
