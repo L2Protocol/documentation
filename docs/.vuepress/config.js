@@ -16,9 +16,10 @@ export default defineUserConfig({
     logoDark: 'https://static.l2protocol.com/images/icon-dark.svg',
     logoAlt: 'L2 Protocol - Smart Contracts for Any Chain',
     heroImage: 'https://static.l2protocol.com/images/icon.svg',
-    navbar: [ 
-      { text: 'Home', link: '/' },  
-      { text: 'L2 Protocol Chain', link: '/l2-protocol-chain/' }
+    navbar: [
+      { text: 'Home', link: '/' },
+      { text: 'L2 Protocol Chain', link: '/l2-protocol-chain/' },
+      { text: 'Governance', link: '/governance/' }
     ],
     sidebar: [
         {
@@ -36,7 +37,15 @@ export default defineUserConfig({
             { text: 'About', link: '/validators/README.md' },
             { text: 'Creation Guide', link: '/validators/validator-creation-guide.md' }
           ]
-        }        
+        },
+        {
+          text: 'Governance',
+          collapsible: true,
+          children: [
+            { text: 'About', link: '/governance/README.md' },
+            { text: 'Governance Guide', link: '/governance/governance-guide.md' }
+          ]
+        }
       ],
       sidebarDepth: 1
   }),
